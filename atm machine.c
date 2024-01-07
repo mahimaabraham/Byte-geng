@@ -45,3 +45,10 @@ int k = 0; // Initialize k to 0
             default:
                 printf("Invalid choice\n");
         }
+       // Clear the input buffer
+       while ((getchar()) != '\n');
+ 
+       printf("\n\n DO YOU WISH TO HAVE ANOTHER TRANSACTION? (y/n): \n\n");
+       scanf(" %c", &transaction); // Added a space before %c to consume the newline character
+       if (transaction == 'n' || transaction == 'N')
+           k = 1;
