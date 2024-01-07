@@ -35,3 +35,13 @@ int k = 0; // Initialize k to 0
                 balance += amt;
                 printf("Deposit successful. Updated balance: $%f\n",balance);
                 break;
+            case 3:
+                printf("Your current balance: $%f\n", balance);
+                break;
+            case 4:
+                printf("Thank you for using ATM.\n");
+                k = 1;
+                break;
+            default:
+                printf("Invalid choice\n");
+        }
