@@ -48,7 +48,13 @@ int k = 0; // Initialize k to 0
        // Clear the input buffer
        while ((getchar()) != '\n');
  
-       printf("\n\n DO YOU WISH TO HAVE ANOTHER TRANSACTION? (y/n): \n\n");
+ printf("\n\n DO YOU WISH TO HAVE ANOTHER TRANSACTION? (y/n): \n\n");
        scanf(" %c", &transaction); // Added a space before %c to consume the newline character
        if (transaction == 'n' || transaction == 'N')
            k = 1;
+   } while (!k);
+ 
+   printf("\n\n THANKS FOR USING OUR ATM SERVICE");
+ 
+   return 0;
+}
